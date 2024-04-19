@@ -1,0 +1,151 @@
+
+:root
+{
+    --off-white: hsl(0, 0%, 100%);
+    --light-grey:hsl(0, 0%, 86%);
+    --smokey-grey:hsl(0, 1%, 44%);
+    --off-black:hsl(0, 0%, 8%);
+    --purple:  hsl(259, 100%, 65%);
+    --light-red:hsl(0, 100%, 67%);
+
+}
+body{
+    font-size: 32px;
+    background-color: var(--light-grey);
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.countainer
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px 15px 150px 15px;
+    /* border-bottom-right-radius: 150px; */
+    background-color: var(--off-white);
+}
+.section1
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.block
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    font-size: 15px;
+}
+input[type="number"]
+{
+    width: 150px;
+    height: 50px;
+    border:1px solid var(--off-black);
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.no-arrows::-webkit-inner-spin-button,
+ 
+.no-arrows::-webkit-outer-spin-button {
+ 
+-webkit-appearance: none;
+ 
+margin: 0;
+ 
+}
+.no-arrows {
+ 
+-moz-appearance: textfield;
+ 
+}
+.section2
+{
+    margin: 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.section2 p
+{
+    color:var(--off-black);
+}
+ #answer1,#answer2,#answer3
+{
+    color:var(--purple);
+}
+.section3
+{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+hr
+{
+    border: 1px solid black;
+    width: 100%;
+}
+img
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    cursor: pointer;
+}
+p
+{
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    background: none;
+    border:none;
+}
+small
+{
+    color:red;
+}
+@media screen and (max-width='600px') {
+    
+        .countainer{
+            width: 360px;
+        }
+        .container{
+            padding: 1rem;
+        }
+        .section1{
+            margin-bottom: 5rem;
+            gap: 0;
+            justify-content: space-between;
+        }
+        .section3{
+            position: relative;
+        }
+        .sumbit_btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .output{
+            margin-top: 5rem;
+        }
+        .output h1{
+            font-size: 3.5rem;
+        }
+    
+}
